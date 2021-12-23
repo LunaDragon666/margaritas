@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Margaritas | Feedback</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Margaritas | Home</title>
+    <link rel="stylesheet" href="css/style.css">
     <!-- Hamburger menu "import" -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <!-- Google fonts "import" -->
@@ -20,16 +20,19 @@
     </label>
     <!-- Links from navbar menu -->
     <ul>
-        <li><a href="../index.html">Margaritas</a></li>
-        <li><a class="active" href="../pages/form.html">Send feedback</a></li>
+        <li><a class="active" href="index.html">Margaritas</a></li>
+        <li><a href="pages/form.html">Send feedback</a></li>
     </ul>
+    <!-- ... -->
+    <form class="title">
+        <input class="name-filter" placeholder="Search margaritas ..." id="${data.drinks[i].idDrink}" data-field="${data.drinks[i].strDrink}" />
+        <button type="search"><i class="fa fa-search"></i></button>
+    </form>
 </nav>
-<!-- ... -->
-<section class="wrapper">
-    <!-- ...-->
-</section>
+<!-- CONTACTFORM -->
+<section></section>
 <!-- FOOTER -->
-<footer>
+<footer class="footer" background="white">
     API powered by <a class="linksource" href="https://www.thecocktaildb.com/api.php">TheCocktailDB</a>
 </footer>
 <!-- JS -->
