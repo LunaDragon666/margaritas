@@ -1,0 +1,297 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+    background: #ededed;
+    font-family: sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    background: #e5f04c;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    box-shadow: #a5b938 0px 1px 2px;
+}
+  
+label.title {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 60px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: left;
+    padding-left: 15px;
+}
+  
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+  
+nav ul li a {
+    color: #0e3605;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    color: white;
+    background: #a5b917;
+    transition: 0.5s;
+}
+  
+.checkbtn {
+    font-size: 30px;
+    color: #354a09;
+    float: left;
+    line-height: 80px;
+    margin-left: 30px;
+    cursor: pointer;
+    display: none;
+}
+  
+/* Hide checkbox */
+#check {
+    display: none;
+}
+
+.title {
+    float: right;
+}
+
+input, select, textarea, input::placeholder{
+    color: var(--secondary-colour);
+}
+
+.title {
+  display:flex;
+  margin-right: 25px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.title>input,
+.title>search {
+  display: block;
+}
+
+.title>input {
+    border: 1px solid white;
+    border-right: none;
+    flex: 1;
+    padding: 9.6px;
+  }
+
+  /* Searchbutton */
+.title>button {
+    padding: 0.6em 0.8em;
+    background-color: #d92555;
+    color: #faf9f6;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+  }
+  
+  .title>button:hover {
+      background-color: #851936;
+  }
+  
+  i.fa.fa-search {
+    color: #ffffff;
+  }
+
+/* */
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+.items a:hover {
+    background: none;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    align-items: stretch;
+    max-width: 1280px;
+    margin: 60px auto 120px;
+    padding: 0px 50px;
+  }
+  
+  .grid > article img {
+    max-width: 100%;
+  }
+  
+  .items {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .item {
+      display: flex;
+      flex-direction: column;
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+  }
+
+  @media (max-width: 350px) {
+    .title {
+        display: none;
+      }
+  }
+  
+  .item__heading {
+    background-color: #d4d0f5;
+    padding: 20px;
+    border: 1px solid #bbbbbb;
+    margin-top: -4px;
+  }
+  
+  .item__content {
+    flex: 1 1 auto;                   /* IE need 1 1 auto */
+    padding: 20px 20px 30px;
+    border-left: 1px solid #bbbbbb;
+    border-right: 1px solid #bbbbbb;
+  }
+  
+  .item__price {
+    background-color: #e0f6d9;
+    padding: 20px;
+    border: 1px solid #bbbbbb;
+    min-height: 250px;
+  }
+
+/* FOOTER */
+footer {
+    background-color: white;
+    letter-spacing: 1.5px;
+    padding: 20px 65px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+  
+.linksource {
+    font-weight: bold;
+    color: #d92555;
+}
+  
+.linksource:hover {
+    background: none;
+    color: #d92555;
+    letter-spacing: 3px;
+}
+  
+.signature {
+    color: black;
+    font-weight: bold;
+}
+  
+.signature:hover {
+    background: none;
+    color: #d92555;
+}
+  
+/* OTHER CSS COMPONENTS*/
+  ::-webkit-scrollbar {
+    width: 15px;
+} 
+::-webkit-scrollbar-track {
+    background: #e6f98b;
+} 
+::-webkit-scrollbar-thumb {
+    background: #97bf04;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6e8c03;
+}
+
+@media (max-width: 1280px) {
+label.title {
+    font-size: 30px;
+    }  
+nav ul li a {
+    font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkbtn {
+      display: block;
+    }
+  
+    ul {
+      position: absolute;
+      width: 100%;
+      height: 40vh;
+      background: #90b83e;
+      top: 80px;
+      left: -100%;
+      text-align: left;
+      transition: all 0.5s;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 10px;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+    a:hover,
+    a.active {
+      background: none;
+      color: #1b2603;
+      text-decoration: underline;
+      text-underline-offset: 10px;
+    }
+  
+    #check:checked ~ ul {
+      left: 0;
+    }
+  
+    footer {
+      font-size: 15px;
+      z-index: -1;
+    }
+  
+    .linksource:hover,
+    .signature:hover {
+      text-decoration: none;
+    }
+}
