@@ -53,11 +53,14 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-a.active,
-a:hover {
+a.active {
     color: white;
     background: #a5b917;
     transition: 0.5s;
+}
+
+a:hover {
+    text-decoration: underline;
 }
   
 .checkbtn {
@@ -172,7 +175,7 @@ h3 {
       width:50%;  
   } 
 
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     .grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       }
