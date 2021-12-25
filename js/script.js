@@ -30,7 +30,7 @@ try {
             margaritaSamples.innerHTML += `
             <article class="items">
                 <div class="item">
-                    <a>
+                    <a href="pages/details.html?id=${data.drinks[i].idDrink}">
                         <img src="${data.drinks[i].strDrinkThumb}" alt="${data.drinks[i].strDrink}" />
                     </a>
                 <div class="item__heading">
