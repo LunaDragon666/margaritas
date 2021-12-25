@@ -7,7 +7,7 @@
 
 #contactForm {
     letter-spacing: 0.75px;
-    padding: 5em;
+    padding: 80px;
 }
   
 /* Form paragraph */
@@ -33,10 +33,6 @@
     margin-top: 10px;
     padding: 10px;
     width: 100%;
-}
-
-input::placeholder, textarea::placeholder {
-    color: #354a09;
 }
 
 textarea {
@@ -69,7 +65,7 @@ textarea {
     border-radius: 5px;
     color: #e6003d;
     display: none;
-    font-size: 0.9rem;
+    font-size: 14px;
     margin-bottom: 18px;
     margin-top: 2px;
     padding: 5px;
