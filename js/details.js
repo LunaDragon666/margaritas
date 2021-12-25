@@ -16,13 +16,13 @@ async function fetchCocktail() {
         createHtml(drink);  
     }
     catch(error) {
-            drinkContainer.innerHTML = theError("Whoops! The margarita data seems to be spilt away.. &#128530;");
+            drinkContainer.innerHTML = theError("Something went wrong! Please try again later.");
     } 
 }
 
 function createHtml(data) {
         drinkContainer.innerHTML = `
-        <h1 class="drink">${data.drinks[0].strDrink}</h1>
+        <h1 class="drinkitem">${data.drinks[0].strDrink}</h1>
                 <p class="id"><span class="bold_txt">id no.</span> ${data.drinks[0].idDrink}</p> 
                         <img class="drinkimg" src="${data.drinks[0].strDrinkThumb}" alt="${data.drinks[0].strDrink}" />
         `;
