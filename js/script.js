@@ -1,8 +1,7 @@
 const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
-const margaritaSamples = document.querySelector(".grid");
+const margaritaSamples = document.querySelector(".drink_overview");
 
 async function getMargaritas() {
-
 try {
     const response = await fetch(url);
     const data = await response.json();
@@ -28,22 +27,22 @@ try {
 
         for (let i = 0; i < data.drinks.length; i++) {
             margaritaSamples.innerHTML += `
-            <article class="items">
-                <div class="item">
+            <article class="drinks">
+                <div class="drink">
                     <a href="pages/details.html?id=${data.drinks[i].idDrink}">
-                        <img src="${data.drinks[i].strDrinkThumb}" alt="${data.drinks[i].strDrink}" />
+                        <img class="drink-image" src="${data.drinks[i].strDrinkThumb}" alt="${data.drinks[i].strDrink}" />
                     </a>
-                <div class="item__heading">
+                    <div class="drinktype">
                         <h2>${data.drinks[i].strDrink}</h2>
                     </div>
-                    <div class="item__content">
-                    <div class="rec">
+                    <div class="ingredients">
+                    <div>
                         ${getIngredients(data.drinks[i])}
                     </div>
                     </div>
-                    <div class="item__price">
+                    <div class="instructions">
                         <h3>Instructions:</h3>
-                            ${data.drinks[i].strInstructions}
+                            <p>${data.drinks[i].strInstructions}</p>
                     </div>
                 </div>
             </article>
@@ -51,7 +50,7 @@ try {
         }
         
     } catch (error) {
-        margaritaSamples.innerHTML = theError("Whoops! The margarita data seems to be spilt away..");
+        margaritaSamples.innerHTML = theError("Something went wrong! Please try again later.");
     } 
 }
 
