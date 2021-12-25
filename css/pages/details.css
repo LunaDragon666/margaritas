@@ -33,6 +33,9 @@
   h1 {
     padding: 50px 0 50px 0;
   }
+  .drink-detail {
+    margin-bottom: 140px;
+}
   .drinkitem {
     margin: 40px 0 0 0;
   }
