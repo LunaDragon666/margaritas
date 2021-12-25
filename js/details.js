@@ -39,20 +39,10 @@ async function fetchCocktail() {
 
 // When API loading's finish and successful, this content will show up
 function createHtml(data) {
-
         cocktailContainer.innerHTML = `
         <h1 class="h1_detail">${data.drinks[0].strDrink}</h1>
                 <p class="p_id"><span class="color">id no.</span> ${data.drinks[0].idDrink}</p> 
                         <img class="img_detail" src="${data.drinks[0].strDrinkThumb}" alt="${data.drinks[0].strDrink}" />
-                            <div class="text-box">
-                        <h2>Instructions</h2>
-                        <hr>
-                    <div class="info">${data.drinks[0].strInstructions}
-                </div>
-            <a class="link" href="#">
-            &#8594; Full ingredient list
-          </a> 
-        </div>
         `;
 
     }
