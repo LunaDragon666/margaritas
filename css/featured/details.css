@@ -1,2 +1,50 @@
 @import "../style.css"; 
 
+h1 {
+    font-size: 2.1em;
+    padding: 80px 0 50px 0;
+    text-align: center;
+  }
+
+  .container {
+      margin-bottom: 150px;
+  }
+
+/* DETAILS PAGE */
+.breadcrumb-nav {
+    padding: 80px 20px;
+    font-size: 3em;
+    margin: 0 0 75px 0;
+    text-align: center;
+  }
+  
+  .breadcrumb-nav a {
+    color: #d92555;
+  }
+  
+  .breadcrumb-nav a:hover {
+    background: none;
+    color: black;
+  }
+
+  .color {
+    color: #d92555;
+    font-weight: bold;
+  }
+  
+  .img_detail {
+    width: 20%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+    
+  .h1_detail {
+    margin: -200px 0 0px 0;
+  }
+  
+  .p_id {
+    margin: -40px 0 50px 0;
+    text-align: center;
+  }
+  
