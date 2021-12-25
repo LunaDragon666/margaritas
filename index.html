@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Hamburger menu "import" -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <!-- Google fonts "import" -->
-    <link rel="stylesheet" href="https://use.typekit.net/shp6ffs.css">
 </head>
 <body>
 <!-- NAVIGATION BAR -->
@@ -23,12 +21,13 @@
         <li><a class="active" href="index.html">Margaritas</a></li>
         <li><a href="pages/form.html">Feedback</a></li>
     </ul>
-    <!-- ... -->
+    <!-- Search bar (currently not in use) -->
     <form class="title">
-        <input class="name-filter" placeholder="Search margaritas ..." id="${data.drinks[i].idDrink}" data-field="${data.drinks[i].strDrink}" />
+        <input class="filter" placeholder=" Search ..." id="#" data-field="#" />
         <button type="search"><i class="fa fa-search"></i></button>
     </form>
 </nav>
+<!-- Loading indicator -->
 <div class="loading">Loading...</div>
 <!-- API Call -->
 <section class="grid"></section>
