@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margaritas | Home</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/featured/form.css">
     <!-- Hamburger menu "import" -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <!-- Google fonts "import" -->
@@ -30,13 +30,60 @@
     </form>
 </nav>
 <!-- CONTACTFORM -->
-<section></section>
+<section class="contact_section">
+<form class="contact_form" id="contactForm">
+   <!-- Message display after form's sent -->
+   <div id="message"></div>
+   <p class="explaintext"><span class="requiremark">*</span> Required fields</p>
+
+   <!-- Name input -->
+    <div class="left">
+      <label class="label">
+         Name <span class="requiremark">*</span>
+         <input class="form" name="fullName" id="fullName" placeholder="e.g. Mary Smith">
+      </label>
+      <div class="form-error" id="fullNameError">&#9888; Please enter your name</div>
+    </div>
+    <!-- Email input -->
+    <div class="right">
+        <label class="label">
+           Email <span class="requiremark">*</span>
+           <input class="form" name="email" id="email" placeholder="example@gmail.com">
+        </label>
+        <div class="form-error" id="emailError">&#9888; Invalid email adress</div>
+    </div>
+
+   <!-- Subject input -->
+   <div>
+      <label class="label">
+         Subject <span class="requiremark">*</span>
+         <input class="form" name="subjectName" id="subjectName" placeholder="What is your request about?">
+      </label>
+      <div class="form-error" id="subjectNameError">&#9888; Your subject request must be at least 10 characters long</div>
+   </div>
+
+   <!-- Adress input -->
+   <div>
+      <label class="label">
+         Adress <span class="requiremark">*</span>
+      </label>
+      <textarea class="form" name="adress" id="adress" placeholder="Your post-adress"></textarea>
+      <div class="form-error" id="adressError">&#9888; The adress must be at least 25 characters</div>
+   </div>
+
+   <!-- Form button (submission) -->
+    <div class="button-wrap">
+        <button class="send-btn" id="submitForm">SUBMIT</button>
+    </div>
+
+</form>
+</section>
 <!-- FOOTER -->
 <footer class="footer" background="white">
     API powered by <a class="linksource" href="https://www.thecocktaildb.com/api.php">TheCocktailDB</a>
 </footer>
 <!-- JS -->
-<script src="../js/script.js"></script>
+<script src="../js/components/form.js"></script>
 <script src="../js/constants/errorMessage.js"></script>
 </body>
 </html>
