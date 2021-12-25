@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margaritas | Home</title>
+    <link rel="stylesheet" href="../css/featured/details.css">
+    <!-- Hamburger menu "import" -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- Google fonts "import" -->
+    <link rel="stylesheet" href="https://use.typekit.net/shp6ffs.css">
+</head>
+<body>
+<!-- NAVIGATION BAR -->
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <!-- Hamburger menu layout -->
+        <i class="fa fa-bars"></i>
+    </label>
+    <!-- Links from navbar menu -->
+    <ul>
+        <li><a class="active" href="../index.html">Margaritas</a></li>
+        <li><a href="../pages/form.html">Feedback</a></li>
+    </ul>
+    <!-- ... -->
+    <form class="title">
+        <input class="name-filter" placeholder="Search margaritas ..." id="${data.drinks[i].idDrink}" data-field="${data.drinks[i].strDrink}" />
+        <button type="search"><i class="fa fa-search"></i></button>
+    </form>
+</nav>
+<div class="loading">Loading...</div>
+<!-- API Call -->
+<section class="container">
+    <div class="breadcrumb-nav">
+       <a class="back-arrow" href="../index.html">⬅</a></div>
+    <div class="cocktail-details"></div>
+</section>
+<!-- FOOTER -->
+<footer class="footer" background="white">
+    API powered by <a class="linksource" href="https://www.thecocktaildb.com/api.php">TheCocktailDB</a>
+</footer>
+<!-- JS -->
+<script src="../js/details.js"></script>
+<script src="../js/constants/errorMessage.js"></script>
+</body>
+</html>
