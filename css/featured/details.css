@@ -1,91 +1,73 @@
 @import "../style.css"; 
 
 h1 {
-    font-size: 2.1em;
-    padding: 80px 0 50px 0;
-    text-align: center;
-  }
-    
-
-/* DETAILS PAGE */
-.breadcrumb-nav {
-    padding: 80px 20px;
-    font-size: 3em;
-    margin: 0 0 75px 0;
-    text-align: center;
-  }
-  
-  .breadcrumb-nav a {
-    color: #d92555;
-  }
-  
-  .breadcrumb-nav a:hover {
-    background: none;
-    color: black;
-  }
-
-  .color {
-    color: #d92555;
-    font-weight: bold;
-  }
-  
-  .img_detail {
-    width: 20%;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-  }
-    
-  .h1_detail {
-    margin: -200px 0 0px 0;
-  }
-  
-  .p_id {
-    margin: -40px 0 50px 0;
-    text-align: center;
-  }
-
-@media (max-width: 1280px) {
-    h1 {
-        padding: 50px 0 50px 0;
-    }
-    .breadcrumb-nav {
-        margin: -50px 0 75px 0;
-      }
-    .container {
-        margin-bottom: 75px;
-    }
-    /* details page */
-    .h1_detail {
-        margin: -175px 0 0px 0;
-    }
-    .img_detail {
-        width: 60%;
-    }
-    .text-box {
-        width: 75%;
-    }
-    a.back-arrow {
-        text-decoration: none;
-    }
+  font-size: 2.1em;
+  padding: 80px 0 50px 0;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.9em;
-        padding: 20px 0 30px 0;
-    }
-    /* details page */
-    .h1_detail {
-        margin: -150px auto;
-    }
-    .p_id {
-        margin: 140px 0 40px 0;
-    }
-    .img_detail {
-        width: 80%;
-    }
-    a.back-arrow {
-        text-decoration: none;
-    }
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 85.75vh;
+}
+  
+.cocktail-details {
+  flex: 1 0 auto;
+  margin-bottom: 150px;
+}    
+
+/* DETAILS PAGE CONTENT */
+.drink {
+  margin: 20px 0 0 0;
+}
+
+.id {
+  margin: -40px 0 50px 0;
+  text-align: center;
+}
+
+.bold_txt {
+  color: #d92555;
+  font-weight: bold;
+}
+  
+.drinkimg {
+  width: 20%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  h1 {
+    padding: 50px 0 50px 0;
+  }
+  .drink {
+    margin: 40px 0 0 0;
+  }
+  .drinkimg {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 85.75vh;
+  }
+  h1 {
+    font-size: 1.9em;
+    padding: 20px 0 30px 0;
+  }
+  .drink {
+    margin: 50px 0 0 0;
+  }
+  .id {
+    margin: -20px 0 55px 0;
+  }
+  .drinkimg {
+    width: 80%;
+  }
 }
