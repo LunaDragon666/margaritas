@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Hamburger menu "import" -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- ... -->
+    <link href="https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- NAVIGATION BAR -->
@@ -22,17 +25,21 @@
         <li><a href="pages/form.html">Feedback</a></li>
     </ul>
     <!-- Search bar (currently not in use) -->
-    <form class="title">
+    <form class="search">
         <input class="filter" placeholder=" Search ..." id="#" data-field="#" />
-        <button type="search"><i class="fa fa-search"></i></button>
+        <button type="search"><i class="fa fa-search" id="search-btn"></i></button>
     </form>
 </nav>
-<!-- Loading indicator -->
-<div class="loading">Loading...</div>
-<!-- API Call -->
-<section class="grid"></section>
+<main>
+    <h1 class="drinklist">Homemade <span class="signature">Margaritas</span> .</h1>
+    <!-- Loading indicator -->
+    <div class="loading">Loading...</div>
+    <!-- API Call -->
+    <section class="drink_overview">
+    </section>
+</main>
 <!-- FOOTER -->
-<footer class="footer" background="white">
+<footer>
     API powered by <a class="linksource" href="https://www.thecocktaildb.com/api.php">TheCocktailDB</a>
 </footer>
 <!-- JS -->
