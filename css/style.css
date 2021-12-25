@@ -48,6 +48,7 @@ nav ul li a {
     color: #0e3605;
     font-size: 17px;
     padding: 10px 20px;
+    letter-spacing: 3px;
     margin: 0 5px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -89,7 +90,7 @@ input, select, textarea, input::placeholder{
 .title {
   display:flex;
   margin-right: 25px;
-  margin-top: 25px;
+  margin-top: 20px;
   position: relative;
 }
 
