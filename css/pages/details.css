@@ -31,7 +31,7 @@
 
 @media (max-width: 1280px) {
   .container {
-    min-height: 90vh;
+    min-height: 85vh;
   } 
   h1 {
     padding: 50px 0 50px 0;
