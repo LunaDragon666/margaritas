@@ -107,7 +107,7 @@ td {
   border-top: 1px solid #bbbbbb;
   letter-spacing: 1px;
   line-height: 25px;
-  min-height: 256px;
+  height: 256px;
   padding: 20px;
 }
 
@@ -142,6 +142,9 @@ td {
   }
   .drinktype h2 {
     font-size: 16px;
+  }
+  .instructions {
+    height: 300px;
   }
   .instructions h3 {
     font-size: 15px;
