@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margaritas | Home</title>
-    <link rel="stylesheet" href="../css/featured/form.css">
+    <link rel="stylesheet" href="../css/pages/form.css">
     <!-- Hamburger menu "import" -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- ... -->
+    <link href="https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- NAVIGATION BAR -->
@@ -22,9 +25,9 @@
         <li><a class="active" href="../pages/form.html">Send feedback</a></li>
     </ul>
     <!-- Search bar (currently not in use) -->
-    <form class="title">
+    <form class="search">
         <input class="filter" placeholder=" Search ..." id="#" data-field="#" />
-        <button type="search"><i class="fa fa-search"></i></button>
+        <button type="search"><i class="fa fa-search" id="search-btn"></i></button>
     </form>
 </nav>
 <!-- CONTACTFORM -->
@@ -73,7 +76,7 @@
 </form>
 </section>
 <!-- FOOTER -->
-<footer class="footer" background="white">
+<footer>
     API powered by <a class="linksource" href="https://www.thecocktaildb.com/api.php">TheCocktailDB</a>
 </footer>
 <!-- JS -->
