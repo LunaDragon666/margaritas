@@ -1,0 +1,31 @@
+footer {
+    background-color: var(--background-color);
+    letter-spacing: 1.5px;
+    padding: 20px 65px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+    
+/* Footer text */
+.linksource {
+    font-weight: bold;
+    color: var(--primary-color);
+    transition: var(--overlay-time);
+}
+    
+.linksource:hover {
+    background: none;
+    color: var(--primary-color);
+    letter-spacing: 3px;
+    text-decoration: none;
+    transition: var(--overlay-time);
+}
+
+@media (max-width: 768px) {
+    footer {
+      font-size: 15px;
+      line-height: 25px;
+      z-index: -1;
+    }
+}
