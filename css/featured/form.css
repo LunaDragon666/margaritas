@@ -1,0 +1,138 @@
+@import "../style.css"; 
+
+.contact_section {
+    margin: 25px auto 25px;
+    max-width: 1280px;
+}
+
+.contact_form {
+    padding: 5em;
+    letter-spacing: 0.75px;
+  }
+  
+  .explaintext {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .requiremark {
+    color: #e6003d;
+    font-weight: bold;
+  }
+  
+  /* Form text imputs */
+  .form {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: "p22-underground", sans-serif;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Labels inside the form */
+  input::placeholder, textarea::placeholder {
+    color: black;
+}
+
+  .label, textarea {
+    display: block;
+    margin-top: 15px;
+  }
+
+  textarea {
+      max-width: 1122px;
+      min-height: 250px;
+  }
+
+  /* Contact form ~ Flexbox */
+  .left {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+  }
+  .right {
+    width: 49%;
+    float: left;
+  }
+  
+  /* Error display(s) */
+  .form-error {
+    display: none;
+    color: #e6003d;
+    border: 1px solid #e6003d;
+    border-radius: 3px;
+    background: rgb(251 128 128 / 10%);
+    font-size: 0.9rem;
+    margin-top: 2px;
+    padding: 5px;
+  }
+  
+  /* Contact form button */
+  .button-wrap {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 53px;
+}
+
+  .send-btn {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    background: #f24b6a;
+    border: none;
+    width: 225px;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.4rem;
+  }
+  
+  .send-btn:hover {
+    background: #d92555;
+    transition: 0.5s;
+  }
+  
+  /* Messsage */
+  .message {
+    background: #72c46b;
+    padding: 1rem;
+    color: white;
+    border-radius: 0.4rem;
+    width: 100%;
+    text-align: center;
+    margin: -5px auto 45px auto;
+  }
+  
+  /* Media queries */
+  @media (max-width: 1024px) {
+    .contact_form  {
+      padding: 2.5em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .form-error,
+    .message,
+    .form {
+      font-size: 0.75em;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .form-error,
+    .message {
+      font-size: 0.7em;
+    }
+    .message {
+      margin: -35px 0 45px -40px;
+      width: 136%;
+    }
+    .form {
+      font-size: 0.63em;
+    }
+  }
