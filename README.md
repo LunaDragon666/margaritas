@@ -6,13 +6,13 @@ In the final assignment for JavaScript 1, I've tried to shape the different part
 CSS > style.css and media.css
 JS > script.js and JS > components > errorMessage.js
 ```
-## details.html
+## paged/details.html
 **Files that belong to this html-file:**
 ``` 
 CSS > style.css and media.css
 JS > details.js and JS > components > errorMessage.js
 ```
-## contact.html
+## pages/contact.html
 **Files that belong to this html-file:**
 ``` 
 CSS > contact.css
