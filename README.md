@@ -4,17 +4,17 @@ In the final assignment for JavaScript 1, I've tried to shape the different part
 **Files that belong to this html-file:**
 ``` 
 css > style.css
-js > script.js and js>constants>errorMessage.js
+js > script.js and js> constants>errorMessage.js
 ```
 ## paged/details.html
 **Files that belong to this html-file:**
 ``` 
 css > pages/details.css
-js > details.js and js>constants>errorMessage.js
+js > details.js and js> constants>errorMessage.js
 ```
 ## pages/contact.html
 **Files that belong to this html-file:**
 ``` 
-CSS > contact.css
-JS > contactForm.js 
+css > pages/form.css
+js > components/form.js
 ```
