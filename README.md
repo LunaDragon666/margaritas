@@ -12,7 +12,7 @@ js > script.js and js> constants>errorMessage.js
 css > pages/details.css
 js > details.js and js> constants>errorMessage.js
 ```
-## pages/contact.html
+## pages/form.html (contact form)
 **Files that belong to this html-file:**
 ``` 
 css > pages/form.css
