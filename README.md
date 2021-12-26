@@ -3,14 +3,14 @@ In the final assignment for JavaScript 1, I've tried to shape the different part
 ## index.html
 **Files that belong to this html-file:**
 ``` 
-CSS > style.css and media.css
-JS > script.js and JS > components > errorMessage.js
+css > style.css
+js > script.js and js>constants>errorMessage.js
 ```
 ## paged/details.html
 **Files that belong to this html-file:**
 ``` 
-CSS > style.css and media.css
-JS > details.js and JS > components > errorMessage.js
+css > pages/details.css
+js > details.js and js>constants>errorMessage.js
 ```
 ## pages/contact.html
 **Files that belong to this html-file:**
