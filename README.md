@@ -1,6 +1,5 @@
 # Margaritas
-In the final assignment for this javascript topic, I've tried to shape the different parts of this assignment as I understood it was meant to be solved and based on what we've learned so far, and the lessons I have learned and as I understood them so far. I haven't shaped the javascript data and layout exactly the way as I wanted, but I'll still deliver it for consideration. 
-Inside this folder, outside this readME file, we can find:
+In the final assignment for JavaScript 1, I've tried to shape the different parts of this task based on what I've managed to learn so far. Inside this folder, outside this readME file, we can find:
 ## index.html
 **Files that belong to this html-file:**
 ``` 
